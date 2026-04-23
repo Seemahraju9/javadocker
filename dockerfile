@@ -1,5 +1,7 @@
-FROM openjdk:17-jdk-slim
+FROM eclipse-temurin:17-jdk-jammy
+
 WORKDIR /app
+
 COPY . /app
-RUN javac sample.java
-CMD ["java","sample"]
+
+CMD ["java", "-jar", "your-app.jar"]
