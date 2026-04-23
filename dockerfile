@@ -2,6 +2,8 @@ FROM eclipse-temurin:17-jdk-jammy
 
 WORKDIR /app
 
-COPY . /app
+COPY Sample.java .
 
-CMD ["java", "-jar", "Sample.java"]
+RUN javac Sample.java
+
+CMD ["java", "Sample"]
