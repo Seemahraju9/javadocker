@@ -4,4 +4,4 @@ WORKDIR /app
 
 COPY . /app
 
-CMD ["java", "-jar", "your-app.jar"]
+CMD ["java", "-jar", "Sample.java"]
